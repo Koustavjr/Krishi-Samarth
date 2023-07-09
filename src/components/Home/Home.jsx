@@ -11,6 +11,7 @@ import Team from '../Team/Team';
 import Minimap from '../Minimap/Minimap';
 import { useNavigate } from 'react-router-dom';
 import '../../fonts/font.css';
+import Banner from '../../assets/banner.png'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -22,19 +23,20 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-primary min-h-screen overflow-x-hidden">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div className="bg-primary-green min-h-screen overflow-x-hidden">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
+        style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'fit' }}>
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
               Welcome to Our Website
             </h1>
             <div>
-            <p className="mt-5 text-4xl sm:text-5xl md:text-6xl text-gray-500 font-sanskrit">
+            <p className="mt-5 text-4xl sm:text-5xl md:text-6xl text-white font-sanskrit">
               Krishisamarth
             </p>
             </div>
-            <p className="mt-4 text-lg text-gray-500">
-              We offer top-notch services and solutions for all your needs.
+            <p className="mt-4 text-lg text-white">
+            Harvest Success with Expert Farming Consultancy & Courses
             </p>
             <div className="mt-10">
               <a

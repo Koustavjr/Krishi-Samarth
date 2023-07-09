@@ -6,7 +6,7 @@ const Minimap = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-primary py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div className="flex flex-col justify-center items-center bg-secondary-green py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">Address</h2>
       <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 mt-8">
         <iframe

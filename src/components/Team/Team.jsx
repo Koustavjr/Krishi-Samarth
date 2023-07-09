@@ -40,7 +40,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="bg-secondary-light-green py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+    <div className="bg-dark-green py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-8">Our Team</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
