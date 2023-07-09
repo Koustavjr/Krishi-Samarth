@@ -47,7 +47,7 @@ const Home = () => {
               </a>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 cursor-pointer justify-center">
-              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green">
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
                 <img
                   src={Weather}
                   alt="Weather"
@@ -58,7 +58,7 @@ const Home = () => {
                   Get real-time weather updates and forecasts for your farming area.
                 </p>
               </div>
-              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green">
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
               <a href="/marketplace">
                 <img
                   src={Specialist}
@@ -74,7 +74,7 @@ const Home = () => {
               <a
                 target="_blank"
                 href="https://bit.ly/3rfCqWh"
-                className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green"
+                className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in hover:-translate-y-1 hover:scale-105"
               >
                 <img
                   src={Problem}
@@ -87,7 +87,7 @@ const Home = () => {
                 </p>
               </a>
               <div
-                className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green"
+                className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105"
                 onClick={handleChatClick}
               >
                 <img
