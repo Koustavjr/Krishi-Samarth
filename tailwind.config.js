@@ -11,7 +11,7 @@ export default {
         'primary-green': '#E9EDC9',
         'secondary-green': '#FEFAE0',
         'dark-green': '#FAEDCD',
-        // 'light-green': '#D0F5BE',
+        'light-green': '#F9DCC4',
         // 'secondary-light-green':'#EDF1D6',
         // 'secondary-dark':'#9DC08B',
         // 'secondary-darker':'#609966',
