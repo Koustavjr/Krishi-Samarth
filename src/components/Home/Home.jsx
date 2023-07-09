@@ -11,7 +11,7 @@ import Team from '../Team/Team';
 import Minimap from '../Minimap/Minimap';
 import { useNavigate } from 'react-router-dom';
 import '../../fonts/font.css';
-import Banner from '../../assets/banner.png'
+import Banner from '../../assets/banner.png';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -23,9 +23,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-primary-green min-h-screen overflow-x-hidden">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
-        style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'fit' }}>
+      <div className="bg-primary-green min-h-screen overflow-x-hidden"
+      style={{ backgroundImage: `url(${Banner})`, backgroundSize: 'fit' }}>
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
               Welcome to Our Website
@@ -103,10 +103,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
         <Contact />
         <Minimap />
         <Team />
-      </div>
       <BackToTop />
       <Footer />
     </>

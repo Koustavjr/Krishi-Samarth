@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Banner1 from '../../assets/Banner_1.jpeg';
 
 const Minimap = () => {
   useEffect(() => {
@@ -6,8 +7,9 @@ const Minimap = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-secondary-green py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-extrabold text-gray-800 sm:text-4xl">Address</h2>
+    <div className="flex flex-col justify-center items-center bg-secondary-green py-16 px-4 sm:py-24 sm:px-6 lg:px-8"
+    style={{ backgroundImage: `url(${Banner1})`, backgroundSize: 'fit' }}>
+      <h2 className="text-3xl font-extrabold text-white sm:text-4xl">Address</h2>
       <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/3 mt-8">
         <iframe
           className="bg-white p-4 rounded-lg shadow-md w-full h-96"
