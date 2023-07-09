@@ -1,11 +1,9 @@
 import React, { useState, useContext } from "react";
-import { auth, firebase, db } from "../../../firebase/fire.js";
+import { auth } from "../../../firebase/fire.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import icon from "../../assets/googleicon.png";
-import { AuthContext } from "../../chat/src/context/AuthContext.jsx";
-import { signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
-import { doc, setDoc,getDoc } from 'firebase/firestore';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useLocation } from 'react-router-dom';
 
 const Login_main = () => {
   const [email, setEmail] = useState("");
@@ -50,7 +48,7 @@ const Login_main = () => {
         setSuccessMessage('');
         // Redirect to homepage
         window.location.href = '/';
-      }, 1000);
+      },);
     }
     catch (error) {
       if (error.message.includes("auth/user-not-found")) {
@@ -63,26 +61,6 @@ const Login_main = () => {
     }
   };
 
-  // Google Login
-
-  // const handleGoogleLogin = async () => {
-  //   try {
-  //     const userCredential = await signInWithPopup(auth, provider);
-  //     const user = userCredential.user;
-  //     console.log(user);
-  //     console.log('Login successful');
-  //     setSuccessMessage('Login successful. Redirecting to Home...');
-  //     setTimeout(() => {
-  //       setSuccessMessage('');
-  //       // Redirect to homepage
-  //       window.location.href = '/';
-  //     }, 3000);
-  //   }
-  //   catch (error) {
-  //     console.error('Signup error:', error.message);
-  //     setErrorMessage(error.message);
-  //   }
-  // };
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);

@@ -10,7 +10,7 @@ import BackToTop from '../BackToTop/BackToTop';
 import Team from '../Team/Team';
 import Minimap from '../Minimap/Minimap';
 import { useNavigate } from 'react-router-dom';
-
+import '../../fonts/font.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -28,6 +28,11 @@ const Home = () => {
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
               Welcome to Our Website
             </h1>
+            <div>
+            <p className="mt-5 text-4xl sm:text-5xl md:text-6xl text-gray-500 font-sanskrit">
+              Krishisamarth
+            </p>
+            </div>
             <p className="mt-4 text-lg text-gray-500">
               We offer top-notch services and solutions for all your needs.
             </p>
@@ -52,6 +57,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green">
+              <a href="/marketplace">
                 <img
                   src={Specialist}
                   alt="Specialist"
@@ -61,6 +67,7 @@ const Home = () => {
                 <p className="text-gray-700">
                   Connect with agricultural specialists to seek expert advice and guidance for your farming practices.
                 </p>
+              </a>
               </div>
               <a
                 target="_blank"

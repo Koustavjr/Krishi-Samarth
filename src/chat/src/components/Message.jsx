@@ -16,7 +16,9 @@ const Message = ({ message }) => {
     <div
       ref={ref}
       className={`message ${
-        message && message.senderId === currentUser.uid ? "owner" : ""
+        message && message.senderId === (currentUser && currentUser.uid)
+          ? "owner"
+          : ""
       }`}
     >
       {message && (
@@ -24,9 +26,9 @@ const Message = ({ message }) => {
           <div className="messageInfo">
             <img
               src={
-                message.senderId === currentUser.uid
-                  ? currentUser.photoURL
-                  : data && data.user && data.user.photoURL
+                message.senderId === (currentUser && currentUser.uid)
+                  ? (currentUser && currentUser.photoURL)
+                  : (data && data.user && data.user.photoURL)
               }
               alt="Photo"
             />
@@ -40,6 +42,6 @@ const Message = ({ message }) => {
       )}
     </div>
   );
-}  
+};
 
 export default Message;
