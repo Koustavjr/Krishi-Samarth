@@ -20,6 +20,25 @@ const Home = () => {
     navigate('/chat');
   };
 
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+  React.useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -38,6 +57,7 @@ const Home = () => {
             <p className="mt-4 text-lg text-white">
             Harvest Success with Expert Farming Consultancy & Courses
             </p>
+            <div id="google_translate_element"></div>
             <div className="mt-10">
               <a
                 href="/services"
