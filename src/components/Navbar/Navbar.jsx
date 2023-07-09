@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/AgroDev.png';
+import Logo from '../../assets/krishisamarth.logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={Logo} alt="Logo" className="h-18 w-24" />
+            <img src={Logo} alt="Logo" className="h-15 w-20" />
           </div>
 
           {/* Navigation Links */}
