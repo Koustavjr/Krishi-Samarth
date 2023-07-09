@@ -12,10 +12,6 @@ const Login_main = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
-  // const { currentUser,setCurrentUser } = useContext(AuthContext);
-
-  // const provider = new GoogleAuthProvider();
-
   // Email Login
 
   const handleEmailLogin = async (e) => {
@@ -48,7 +44,7 @@ const Login_main = () => {
         setSuccessMessage('');
         // Redirect to homepage
         window.location.href = '/';
-      },);
+      },1000);
     }
     catch (error) {
       if (error.message.includes("auth/user-not-found")) {
