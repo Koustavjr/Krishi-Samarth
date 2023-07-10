@@ -49,7 +49,7 @@ const MyComponent = () => {
           const { latitude, longitude } = position.coords;
           try {
             const response = await fetch(
-              `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&days=7`
+              `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&days=7`
             );
 
             if (!response.ok) {
@@ -86,7 +86,7 @@ const MyComponent = () => {
 
     try {
       const response = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`
       );
 
       if (!response.ok) {
