@@ -38,6 +38,9 @@ const Home = () => {
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
   }, []);
+  const handleWeatherClick = () => {
+    navigate('/weather');
+  };
 
   return (
     <>
@@ -67,7 +70,7 @@ const Home = () => {
               </a>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 cursor-pointer justify-center">
-              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105" onClick={handleWeatherClick}>
                 <img
                   src={Weather}
                   alt="Weather"

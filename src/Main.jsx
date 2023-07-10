@@ -15,6 +15,7 @@ import App from './chat/src/App';
 import { AuthContextProvider } from './chat/src/context/AuthContext';
 import { ChatContextProvider } from './chat/src/context/ChatContext';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MyComponent from './components/Weather/Weather';
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,11 @@ const router = createBrowserRouter([
         path: '/signup',
         errorElement: <ErrorPage />,
         element: <SignUp />,
+      },
+      {
+        path: '/weather',
+        errorElement: <ErrorPage />,
+        element: <MyComponent />,
       },
     ],
   },
