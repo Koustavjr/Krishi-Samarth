@@ -84,6 +84,8 @@ https://krishi-samarth.vercel.app/
 
 ![screencapture-localhost-5173-2023-07-10-15_26_50](https://github.com/Soumyajit2825/Krishi-Samarth/assets/100519291/17631682-2edb-44f1-8bed-ccdb8d441e99)
 
+# 11. Demo Video
+https://youtu.be/8tPs-BP0CJw
 
 ## Contributors
 - Soumyajit Mondal
