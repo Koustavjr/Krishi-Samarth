@@ -27,7 +27,7 @@ const Footer = () => {
         <p className="mb-0">
           &copy; {new Date().getFullYear()}{' '}
           <a className="text-white font-bold" href="#" target="_blank" rel="noreferrer">
-            AgroDev
+            Krishi Samarth
           </a>
         </p>
       </div>

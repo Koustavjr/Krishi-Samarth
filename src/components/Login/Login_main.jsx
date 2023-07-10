@@ -3,7 +3,6 @@ import { auth } from "../../../firebase/fire.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useLocation } from 'react-router-dom';
 
 const Login_main = () => {
   const [email, setEmail] = useState("");
@@ -44,7 +43,7 @@ const Login_main = () => {
         setSuccessMessage('');
         // Redirect to homepage
         window.location.href = '/';
-      },1000);
+      },);
     }
     catch (error) {
       if (error.message.includes("auth/user-not-found")) {

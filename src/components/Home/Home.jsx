@@ -43,6 +43,10 @@ const Home = () => {
     navigate('/weather');
   };
 
+  const handleMarketClick = () => {
+    navigate('/marketplace');
+  }
+
   return (
     <>
       <Navbar />
@@ -62,7 +66,7 @@ const Home = () => {
             Harvest Success with Expert Farming Consultancy & Courses
             </p>
             <div id="google_translate_element"></div>
-            <div className="mt-10">
+            <div className="mt-10" onClick={handleMarketClick}>
               <a
                 href="/marketplace"
                 className="text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 px-6 py-3 rounded-md"

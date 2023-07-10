@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
 
 const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
@@ -103,6 +105,8 @@ const MyComponent = () => {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="bg-primary min-h-screen py-8 px-4">
       <div className="max-w-md mx-auto bg-white rounded-lg p-8">
         <form onSubmit={handleLocationSearch} className="mb-4">
@@ -149,6 +153,8 @@ const MyComponent = () => {
         )}
       </div>
     </div>
+      <Footer />
+    </>
   );
 };
 
