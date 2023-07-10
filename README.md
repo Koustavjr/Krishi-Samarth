@@ -60,25 +60,32 @@ Users get to experience a hassle-free login system by just entering their email 
 Open your favorite Terminal and run these commands:
 Clone the repository: 
 ```sh
-git clone https://github.com/SWASTIKA28/glovia
+git clone https://github.com/Soumyajit2825/Krishi-Samarth
+```
+Navigate to the project folder:
+```sh
+cd Krishi-Samarth
 ```
 
 Install node modules: 
 ```sh
-yarn install
+npm install
 ```
 Start the server: 
 ```sh
-yarn start
+npm run dev
 ```
 ## 9. WEBSITE URL 
-GM
+
+
 
 ## 10. ScreenShot
-![alt text](public\KrishiSamarth_SS.png)
+
+![screencapture-localhost-5173-2023-07-10-15_26_50](https://github.com/Soumyajit2825/Krishi-Samarth/assets/100519291/17631682-2edb-44f1-8bed-ccdb8d441e99)
+
 
 ## Contributors
-> Soumyajit Mondal
-> Ayishik Das
-> Snehadrita Seth
-> Koustav Chatterjee
+- Soumyajit Mondal
+- Ayishik Das
+- Snehadrita Seth
+- Koustav Chatterjee
