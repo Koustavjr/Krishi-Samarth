@@ -77,7 +77,7 @@ npm run dev
 ```
 ## 9. WEBSITE URL 
 
-
+https://krishi-samarth.vercel.app/
 
 ## 10. ScreenShot
 
