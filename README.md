@@ -49,7 +49,8 @@ Users get to experience a hassle-free login system by just entering their email 
 | API | Weather api and firebase api |
 | Tools | Postman, GitHub,VS code,git bash |
 | Languages | HTML, CSS, SCSS, JavaScript, Tailwind, React|
-|Hosting Platform | Vercel |
+| Backend + DataBase | Firebase |
+| Hosting Platform | Vercel |
 
 
 
