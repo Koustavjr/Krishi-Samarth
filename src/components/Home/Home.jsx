@@ -8,7 +8,7 @@ import Chat from '../../assets/chat.png';
 import Problem from '../../assets/problem.png';
 import BackToTop from '../BackToTop/BackToTop';
 import Team from '../Team/Team';
-import Minimap from '../Minimap/Minimap';
+// import Minimap from '../Minimap/Minimap';
 import { useNavigate } from 'react-router-dom';
 import '../../fonts/font.css';
 import Banner from '../../assets/banner.png';
@@ -38,6 +38,7 @@ const Home = () => {
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
   }, []);
+  
   const handleWeatherClick = () => {
     navigate('/weather');
   };
@@ -128,7 +129,7 @@ const Home = () => {
         </div>
       </div>
         <Contact />
-        <Minimap />
+        {/* <Minimap /> */}
         <Team />
       <BackToTop />
       <Footer />
