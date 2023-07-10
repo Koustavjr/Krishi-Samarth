@@ -64,10 +64,10 @@ const Home = () => {
             <div id="google_translate_element"></div>
             <div className="mt-10">
               <a
-                href="/services"
+                href="/marketplace"
                 className="text-base font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 px-6 py-3 rounded-md"
               >
-                Explore Services
+                Explore Marketplace
               </a>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 cursor-pointer justify-center">

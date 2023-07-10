@@ -37,13 +37,13 @@ const Navbar = () => {
             >
               About
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/services"
               activeClassName="active-link"
               className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Services
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/chat"
               activeClassName="active-link"
@@ -131,13 +131,13 @@ const Navbar = () => {
                   >
                     About
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                     to="/services"
                     activeClassName="active-link"
                     className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                   >
                     Services
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink
                     to="/chat"
                     activeClassName="active-link"

@@ -35,16 +35,16 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         element: <About />,
       },
-      {
-        path: '/services',
-        errorElement: <ErrorPage />,
-        element: 
-        (
-        <AuthContextProvider>
-          <Service />
-        </AuthContextProvider>
-        ),
-      },
+      // {
+      //   path: '/services',
+      //   errorElement: <ErrorPage />,
+      //   element: 
+      //   (
+      //   
+      //     <Service />
+      //   
+      //   ),
+      // },
       {
         path: '/chat',
         errorElement: <ErrorPage />,
@@ -61,7 +61,11 @@ const router = createBrowserRouter([
       {
         path: '/marketplace',
         errorElement: <ErrorPage />,
-        element: <Market />,
+        element: (
+          <AuthContextProvider>
+        <Market />,
+        </AuthContextProvider>
+        ),
       },
       {
         path: '/login',

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { FaCartPlus, FaCheck, FaTrash, FaTimes } from "react-icons/fa";
+import { AuthContext } from "../../chat/src/context/AuthContext";
 import P1 from '../../assets/1.jpeg';
 import P2 from '../../assets/2.jpeg';
 import P3 from '../../assets/3.jpeg';
@@ -18,8 +19,13 @@ import C8 from '../../assets/C8.jpeg';
 import F1 from '../../assets/F1.jpeg';
 import F2 from '../../assets/F2.jpeg';
 import F3 from '../../assets/F3.jpeg';
+import Login_main from '../Login/Login_main';
 
 const Market = () => {
+  const { currentUser } = useContext(AuthContext);
+  if (!currentUser) {
+    return <Login_main />
+  }
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("All");
