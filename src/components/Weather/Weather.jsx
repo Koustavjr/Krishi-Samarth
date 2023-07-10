@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Icon1 from '../../assets/day/113.png';
-import Icon2 from '../../assets/night/113.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Weather_bg from '../../assets/Weather_bg.jpeg';
 
 const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
