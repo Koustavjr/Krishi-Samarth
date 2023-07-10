@@ -32,14 +32,14 @@ const Market = () => {
   };
 
   const items = [
-    { id: 1, name: "Seeds", price: 10, category: "Seeds", image: S1 },
-    { id: 2, name: "Fertilizers", price: 20, category: "Fertilizers", image: F1 },
-    { id: 3, name: "Pesticides", price: 15, category: "Pesticides", image: P1 },
-    { id: 4, name: "Seeds", price: 10, category: "Seeds", image: S2 },
-    { id: 5, name: "Fertilizers", price: 20, category: "Fertilizers", image: F2 },
-    { id: 6, name: "Pesticides", price: 15, category: "Pesticides", image: P2 },
-    { id: 7, name: "Fertilizers", price: 20, category: "Fertilizers", image: F3 },
-    { id: 8, name: "Pesticides", price: 15, category: "Pesticides", image: P3 },
+    { id: 1, name: "Onion Seeds", price: 10, category: "Seeds", image: S1 },
+    { id: 2, name: "Fertilizers 1", price: 20, category: "Fertilizers", image: F1 },
+    { id: 3, name: "Pesticides 1", price: 15, category: "Pesticides", image: P1 },
+    { id: 4, name: "Grass Seeds", price: 10, category: "Seeds", image: S2 },
+    { id: 5, name: "Fertilizers 2", price: 20, category: "Fertilizers", image: F2 },
+    { id: 6, name: "Pesticides 2", price: 15, category: "Pesticides", image: P2 },
+    { id: 7, name: "Fertilizers 3", price: 20, category: "Fertilizers", image: F3 },
+    { id: 8, name: "Pesticides 3", price: 15, category: "Pesticides", image: P3 },
     // Add more products here
   ];
 
