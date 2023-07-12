@@ -86,8 +86,8 @@ const Home = () => {
                   Get real-time weather updates and forecasts for your farming area.
                 </p>
               </div>
-              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
-              <a href="/marketplace">
+              <div className="bg-white shadow-lg rounded-lg p-6 hover:bg-light-green transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105"
+              onClick={handleMarketClick}>
                 <img
                   src={Specialist}
                   alt="Specialist"
@@ -97,7 +97,6 @@ const Home = () => {
                 <p className="text-gray-700">
                   Connect with agricultural specialists to seek expert advice and guidance for your farming practices.
                 </p>
-              </a>
               </div>
               <a
                 target="_blank"
