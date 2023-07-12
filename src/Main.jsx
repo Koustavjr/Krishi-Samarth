@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './chat/src/style.scss'
 import App_main from './App_main';
-// import Loading from './components/Loading/Loading';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Login_main from './components/Login/Login_main';
 import SignUp from './components/SignUp/Signup';
 import ErrorPage from './components/ErrorPage/ErrorPage';
-import Service from './components/Service/Service';
 import Market from './components/Marketplace/Marketplace'
 import App from './chat/src/App';
 import { AuthContextProvider } from './chat/src/context/AuthContext';
@@ -35,16 +33,6 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         element: <About />,
       },
-      // {
-      //   path: '/services',
-      //   errorElement: <ErrorPage />,
-      //   element: 
-      //   (
-      //   
-      //     <Service />
-      //   
-      //   ),
-      // },
       {
         path: '/chat',
         errorElement: <ErrorPage />,
@@ -62,8 +50,8 @@ const router = createBrowserRouter([
         path: '/marketplace',
         errorElement: <ErrorPage />,
         element: (
-          <AuthContextProvider>
-        <Market />,
+        <AuthContextProvider>
+          <Market />,
         </AuthContextProvider>
         ),
       },
